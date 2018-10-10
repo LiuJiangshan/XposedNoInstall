@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_appIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_appName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_appVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="1.0"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_moduleInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="xposed module info"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_packageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="ljs.xposed.noreboot"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

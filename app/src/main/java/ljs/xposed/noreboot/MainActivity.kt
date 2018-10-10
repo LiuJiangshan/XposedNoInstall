@@ -1,19 +1,23 @@
 package ljs.xposed.noreboot
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity;
-
+import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
 import kotlinx.android.synthetic.main.activity_main.*
+import ljs.android.activity.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
+
+        val navController = Navigation.findNavController(this, R.id.nav_fragment)
+
         setSupportActionBar(toolbar)
-        addButton.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
+
+        NavigationUI.setupActionBarWithNavController(this, navController)
     }
 }
