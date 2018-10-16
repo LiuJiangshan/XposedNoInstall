@@ -1,4 +1,4 @@
 package ljs.xposed.noreboot
 
-val Any.Key_Configs: String
-    get() = "configs"
+val Any.Key_PackageNames: String
+    get() = "packageNames"

@@ -1,9 +1,9 @@
 package ljs.xposed.noreboot
 
 import android.content.Context
-import android.content.pm.ApplicationInfo
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
+import java.io.File
 
 val Context.installedXposedModules: List<PackageInfo>
     get() {
@@ -15,3 +15,9 @@ val Context.installedXposedModules: List<PackageInfo>
         }
         return modules
     }
+
+fun Context.getApkFile(modulePackageName: String): File {
+    val moudleContext = this.createPackageContext(modulePackageName, Context.CONTEXT_INCLUDE_CODE or Context.CONTEXT_IGNORE_SECURITY)
+    val apkPath = moudleContext.packageCodePath
+    return File(apkPath)
+}
