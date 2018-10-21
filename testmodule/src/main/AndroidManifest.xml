@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ljs.xposed.noreboot.test">
+
+    <application
+        android:allowBackup="true"
+        android:label="test-no-reboot"
+        android:supportsRtl="true">
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="test XposedNoReboot" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="30" />
+
+    </application>
+</manifest>

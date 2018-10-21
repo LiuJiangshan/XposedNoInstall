@@ -12,7 +12,7 @@
         android:layout_height="match_parent" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/helpButton"
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
@@ -22,5 +22,5 @@
         app:layout_anchorGravity="bottom|end"
         app:layout_behavior="@string/FloatingActionButtonHiddenBehavior"
         app:rippleColor="@color/colorAccent"
-        app:srcCompat="@drawable/ic_warning_white_24dp" />
+        app:srcCompat="@drawable/ic_add_circle_white_24dp" />
 </android.support.design.widget.CoordinatorLayout>

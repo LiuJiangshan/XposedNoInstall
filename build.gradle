@@ -5,6 +5,7 @@ buildscript {
         kotlin_version = '1.2.61'
         navigationVersion = '1.0.0-alpha06'
         gradleVersion = '3.2.0'
+        ljsAndroidLibVersion = '0.4702'
     }
     repositories {
         mavenLocal()
